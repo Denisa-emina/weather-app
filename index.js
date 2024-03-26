@@ -9,7 +9,7 @@ if (currentCityTag) {
 
   if (!currentCityFromLs) {
     localStorage.setItem("city", "București");
-    currentCityTag.innerHTML = "București";
+    currentCityFromLs = "București";
       }
   
 //Afisam vremea curenta folosind o functie din alt fisier
