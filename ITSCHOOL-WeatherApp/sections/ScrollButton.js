@@ -1,13 +1,13 @@
 
 const scrollButton = document.querySelector('.scroll-button');
 
-function isScrolledMoreThanMiddle(event) {
+function isScrolledMoreThanMiddle() {
     const pageHeight = window.innerHeight;
     return window.scrollY > (pageHeight * 0.5);
 }
 
 window.addEventListener('scroll', () => {
-    if (isScrolledMoreThanMiddle(event)) {
+    if (isScrolledMoreThanMiddle()) {
         scrollButton.style.display = 'block';
     } else {
         scrollButton.style.display = 'none';
